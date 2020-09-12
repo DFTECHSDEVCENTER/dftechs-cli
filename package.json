@@ -3,9 +3,6 @@
   "version": "0.0.1-beta",
   "description": "A Nodejs Application to interact with DF Community API",
   "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DFTECHSDEVCENTER/dftechs-cli.git"
