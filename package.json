@@ -1,6 +1,6 @@
 {
   "name": "dftechs-cli",
-  "version": "0.0.1-alpha",
+  "version": "0.0.1-beta",
   "description": "A Nodejs Application to interact with DF Community API",
   "main": "src/index.js",
   "scripts": {
