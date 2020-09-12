@@ -1,0 +1,27 @@
+{
+  "name": "dftechs-cli",
+  "version": "0.0.1-alpha",
+  "description": "A Nodejs Application to interact with DF Community API",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DFTECHSDEVCENTER/dftechs-cli.git"
+  },
+  "keywords": [
+    "dftechs",
+    "dftechs-api",
+    "api",
+    "dfcommunity-api",
+    "nodejs",
+    "express"
+  ],
+  "author": "BRAVO68WEB",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/DFTECHSDEVCENTER/dftechs-cli/issues"
+  },
+  "homepage": "https://github.com/DFTECHSDEVCENTER/dftechs-cli#readme"
+}
