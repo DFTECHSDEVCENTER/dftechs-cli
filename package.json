@@ -1,11 +1,8 @@
 {
   "name": "dftechs-cli",
-  "version": "0.0.1-alpha",
+  "version": "0.0.2",
   "description": "A Nodejs Application to interact with DF Community API",
   "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DFTECHSDEVCENTER/dftechs-cli.git"
@@ -23,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/DFTECHSDEVCENTER/dftechs-cli/issues"
   },
-  "homepage": "https://github.com/DFTECHSDEVCENTER/dftechs-cli#readme"
+  "homepage": "https://github.com/DFTECHSDEVCENTER/dftechs-cli#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "inquirer": "^7.3.3"
+  }
 }
