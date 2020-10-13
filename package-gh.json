@@ -1,6 +1,6 @@
 {
-  "name": "dftechs-cli",
-  "version": "0.0.2-github",
+  "name": "@DFTECHSDEVCENTER/dftechs-cli",
+  "version": "0.0.3-github",
   "description": "A Nodejs Application to interact with DF Community API",
   "main": "src/index.js",
   "repository": {
@@ -15,9 +15,6 @@
     "nodejs",
     "express"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "author": "BRAVO68WEB",
   "license": "GPL-3.0",
   "bugs": {
@@ -26,6 +23,17 @@
   "homepage": "https://github.com/DFTECHSDEVCENTER/dftechs-cli#readme",
   "dependencies": {
     "chalk": "^4.1.0",
-    "inquirer": "^7.3.3"
+    "inquirer": "^7.3.3",
+    "opn": "^6.0.0"
+  },
+  "bin": {
+    "dftechs-cli": "./src/index.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "preferGlobal": true,
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }
