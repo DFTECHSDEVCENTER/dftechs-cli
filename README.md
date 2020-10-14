@@ -17,6 +17,12 @@ An Nodejs application to interact with DF Community API
 npm i -g dftechs-cli
 ```
 
+## Build Version
+
+```
+Version: v0.0.4 [Alpha Stage]
+```
+
 ## Release Info
 
 [![https://nodei.co/npm/dftechs-cli.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/dftechs-cli.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/dftechs-cli)
