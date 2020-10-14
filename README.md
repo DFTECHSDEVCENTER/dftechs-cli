@@ -5,8 +5,10 @@
 An Nodejs application to interact with DF Community API
 
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square) | ![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
+
 ![ForTheBadge built-with-love](https://ForTheBadge.com/images/badges/built-with-love.svg)
 ![forthebadge made-with-nodejs](https://ForTheBadge.com/images/badges/made-with-javascript.svg)
+
 ![Env](https://img.shields.io/badge/App%20Env-CLI%20compatible-yellow) | ![Work](https://img.shields.io/badge/Works%20with-DF%20Community%20API-blue)
 
 ## Installation
