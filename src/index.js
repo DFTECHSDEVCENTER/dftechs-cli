@@ -6,14 +6,16 @@ var inquirer = require("inquirer");
 const path = require("path");
 const { exec } = require("child_process");
 const opn = require("opn");
+const util = require("util");
+const execFile = util.promisify(require("child_process").execFile);
+// const initPro = require("./parts/projectInit.js");
 
-function init(){
+function init() {
   console.log("Initializing ....");
   setTimeout(start, 3000);
 }
-function start(){
+function start() {
   console.log("Starting DF Community API");
-  console.log(" ");
   console.log(" ");
   inquirer
     .prompt([
@@ -31,43 +33,54 @@ function start(){
     ])
     .then((answers) => {
       if (answers.initChoice) {
-          const initChoice = answers.initChoice;
-          switch(initChoice)
-          {
-              case 'Initial a Project?' :
-              initProject();
-              break;
-              case 'Work with DF Community API' :
-              dfcommsAPI();
-              break;
-              case 'Visit Our Project !' :
-              visitProject();
-              break;
-              case 'Contact Us ..' :
-              contactUS();
-              break;
-          }
+        const initChoice = answers.initChoice;
+        switch (initChoice) {
+          case "Initial a Project?":
+            initProject();
+            break;
+          case "Work with DF Community API":
+            dfcommsAPI();
+            break;
+          case "Visit Our Project !":
+            visitProject();
+            break;
+          case "Contact Us ..":
+            contactUS();
+            break;
+        }
       } else {
         console.log("Goodbye 👋");
       }
     });
 }
 
-function initProject(){
-  console.log("Init Project Working !!")
+function initGit() {
+  async function gitInitIn() {
+    const { gitInitOut } = await execFile("git", ["init"]);
+    console.log(gitInitOut);
+  }
+  gitInitIn();
+}
+function initNPM() {
+  console.log("Initiallizing Nodejs Project");
+}
+function initProject() {
+  console.log("Init Project Working !!");
+  initGit();
+  // initNPM();
 }
 
-function dfcommsAPI(){
-  console.log("DF Community API Login !!")
+function dfcommsAPI() {
+  console.log("DF Community API Login !!");
 }
 
-function visitProject(){
-  console.log("Visit Project !!!")
-  opn('https://dftechs.dfcommunity.win/projects');
+function visitProject() {
+  console.log("Visit Project !!!");
+  opn("https://dftechs.dfcommunity.win/projects");
 }
-function contactUS(){
+function contactUS() {
   console.log("Contact Us ..");
-  opn('https://dftechs.dfcommunity.win/contactus');
+  opn("https://dftechs.dfcommunity.win/contactus");
 }
 if (useage) {
   inquirer
@@ -75,8 +88,7 @@ if (useage) {
       {
         type: "confirm",
         name: "initz",
-        message:
-          "Do you want to initialize DF Techs CLI ?",
+        message: "Do you want to initialize DF Techs CLI ?",
         default: false,
       },
     ])
@@ -87,4 +99,4 @@ if (useage) {
         console.log("Goodbye 👋");
       }
     });
-  }
+}
