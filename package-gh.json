@@ -1,6 +1,6 @@
 {
   "name": "@DFTECHSDEVCENTER/dftechs-cli",
-  "version": "0.0.4-github",
+  "version": "0.0.5-github",
   "description": "A Nodejs Application to interact with DF Community API",
   "main": "src/index.js",
   "repository": {
@@ -24,7 +24,8 @@
   "dependencies": {
     "chalk": "^4.1.0",
     "inquirer": "^7.3.3",
-    "opn": "^6.0.0"
+    "opn": "^6.0.0",
+    "require": "^2.4.20"
   },
   "bin": {
     "dftechs-cli": "./src/index.js"
@@ -34,6 +35,6 @@
   },
   "preferGlobal": true,
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.5"
   }
 }
